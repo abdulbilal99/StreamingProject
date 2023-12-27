@@ -1,0 +1,30 @@
+{
+    "type": "struct",
+    "fields": [
+        {
+            "name": "person",
+            "type": "struct",
+            "fields": [
+                {"name": "ID", "type": "integer", "nullable": true},
+                {
+                    "name": "name",
+                    "type": "struct",
+                    "fields": [
+                        {"name": "first", "type": "string", "nullable": true},
+                        {"name": "last", "type": "string", "nullable": true}
+                    ]
+                },
+                {"name": "age", "type": "integer", "nullable": true},
+                {
+                    "name": "address",
+                    "type": "struct",
+                    "fields": [
+                        {"name": "city", "type": "string", "nullable": true},
+                        {"name": "state", "type": "string", "nullable": true}
+                    ]
+                },
+                {"name": "loaddate", "type": "string", "nullable": true}
+            ]
+        }
+    ]
+}
